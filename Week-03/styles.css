@@ -1,0 +1,378 @@
+body{
+    background-color: #fff;
+    font-family: "Roboto", sans-serif;
+
+}
+header{
+    position: relative;
+    width: 94%;
+    height: 100px;
+    margin:5px auto;
+}
+
+header button {
+    position: absolute;
+    top:35px;
+    display: inline-block;
+    background-color: inherit;
+    color: #373867;
+    border: none;
+    height: 40px;
+    width: 40px;
+}
+header h1 {
+    position: absolute;
+    top: 36px;
+    left: 45px;
+    font-family: inherit;
+    font-size: 45px;
+    color: #49A37B;
+    margin: 0px 25px;
+    font-weight: bold;
+    text-shadow: 0px 4px 2px #c3c3c3;
+}
+header nav {
+    position: absolute;
+    display: inline-block;
+    width: 200px;
+    height: 60px;
+    right: 25px;
+    bottom:10px;
+}
+nav a {
+    display: inline-block;
+    position: relative;
+    width: 10px;
+    height: 10px;
+    padding: 10px;
+}
+nav img {
+    width: 25px;
+    height: 25px;
+    margin:7px;
+}
+
+main section {
+    border-top: 1px solid black;
+    display: block;
+    width: 94%;
+    margin: 0 auto;
+}
+section h2 {
+    margin-top: 2px;
+    color: #49A37B;
+    font-size: 30px;
+}
+
+.hi-section, .function-section {
+    margin-top: 5px;
+    margin-bottom: 5px;
+    position: relative;
+    height: 360px;
+}
+.hi-section h3{
+    display: inline-block;
+    margin-top: 12px;
+    text-transform: uppercase;
+    position: absolute;
+    top:35px;
+    font-weight: bolder;
+    left:72px;
+}
+.hi-section h2{
+    display: inline-block;
+    width:345px;
+    position:absolute;
+    top: 2px;
+    left:72px;
+}
+.hi-section p {
+    display: inline-block;
+    width: 345px;
+    position: absolute;
+    top:60px;
+    left:72px;
+    font-size:20px;
+    margin-top: 5px;
+}
+.hi-section img {
+    display: inline-block;
+    position: absolute;
+    width: 500px;
+    right: 70px;
+    top: 15px;
+}
+.hi-section button {
+    position: absolute;
+    bottom: 10px;
+    left:72px;
+    font: inherit;
+    background-color: #fff;
+    border: 1px solid #49A37B;
+    border-radius: 5px;
+    height: 50px;
+    width: 170px;
+    text-transform: uppercase;
+    margin-top: 5px;
+}
+section h3{
+    color:#49A37B;
+}
+.function-section{
+    height: 260px;
+}
+.function-section p{
+    position:absolute;
+}
+.function-section h2{
+    display: inline-block;
+    width:345px;
+    position:absolute;
+    top: 2px;
+    left:72px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+.function-section h3{
+    display: inline-block;
+    margin-top: 12px;
+    text-transform: uppercase;
+    position: absolute;
+    top:35px;
+    font-weight: bolder;
+    left:72px;
+}
+.function-section article{
+    display: inline-block;
+    width:50%;
+    position:absolute;
+    top:50px;
+    height: 90px;
+}
+#art-agenda{
+    left:710px;
+}
+#art-formulario{
+    left:710px;
+    top:200px;
+}
+#art-turnos, #art-membresias{
+    left:80px;
+}
+#art-membresias, #art-formulario{
+    position: absolute;
+    top:160px;
+}
+.function-section #art-turnos h3, .function-section #art-formulario h3, .function-section #art-agenda h3, .function-section #art-membresias h3 {
+    top:5px;
+    left:95px;
+}
+.function-section #art-turnos p, .function-section #art-formulario p, .function-section #art-agenda p, .function-section #art-membresias p {
+    left: 95px;
+    top:35px;
+    width: 400px;
+}
+
+.aboutus-section{
+    height: 300px;
+    position: relative;
+}
+.aboutus-section h2{
+    display: inline-block;
+    position: absolute;
+    font-weight: bold;
+    font-size: 45px;
+    top:100px;
+    left: 125px;
+    width: 250px;
+    text-shadow: 0px 4px 2px #c3c3c3;
+}
+.aboutus-section p{
+    display: inline-block;
+    position: absolute;
+    top: 40px;
+    width: 700px;
+    left: 485px;
+    font-size: 25px;
+    font-weight: 500;
+    height: 100px;
+    box-sizing: border-box;
+}
+.form-section{
+    position: relative;
+    height: 420px;
+}
+.form-section h2{
+    display: inline-block;
+    position: absolute;
+    text-shadow: 0px 4px 2px #c3c3c3;
+    font-weight: bold;
+    left:72px;
+    top: 25px;
+}
+.form-section form input {
+    display: inline-block;
+    width: 270px;
+}
+#name{
+    position: absolute;
+    top: 90px;
+    left:70px;
+}
+#lastName{
+    position: absolute;
+    top: 125px;
+    left:70px;
+}
+#email{
+    position: absolute;
+    top:160px;
+    left: 70px;
+}
+#comments{
+    position: absolute;
+    top: 190px;
+    left: 70px;
+    width: 800px;
+}
+#submit-btn{
+    position: absolute;
+    top: 370px;
+    left: 70px;
+    color:black;
+    background-color: #AACE9B;
+    width: 60px;
+    height: 30px;
+    border-radius: 4px;
+    border: none;
+}
+.form-section h3 {
+    position: absolute;
+    left:550px;
+    top:25px;
+    font-weight: bold;
+    font-size: 30px;
+}
+#option-1{
+    position: absolute;
+    left: 530px;
+    top: 85px;
+    width: auto;
+    height: auto;
+}
+#first-label{
+    position: absolute;
+    top: 87px;
+    left: 550px;
+}
+#option-2{
+    position: absolute;
+    top:120px;
+    left: 530px;
+    width: auto;
+    height: auto;
+}
+#second-label{
+    position: absolute;
+    top: 121px;
+    left: 550px;
+}
+#option-3{
+    position: absolute;
+    top:156px;
+    left: 530px;
+    width: auto;
+    height: auto;
+}
+#third-label{
+    position: absolute;
+    top: 157px;
+    left: 550px;
+}
+.classes-section{
+    position:relative;
+    height: 210px;
+}
+.classes-section article {
+    display: inline-block;
+    position: relative;
+    width:23%;
+    height: 100px;
+    top:40px;
+}
+.classes-section li{
+    position:relative;
+}
+.classes-section article h3{
+    display: inline-block;
+    position: absolute;
+    font-weight: bold;
+}
+#header-clases{
+    top:-29px;
+    left:70px;
+}
+.classes-section article ul{
+    list-style-type: circle;
+}
+.li-clases{
+    top:25px;
+    left:70px;
+}
+.li-black{
+    top: 20px;
+}
+#header-black{
+    top:3px;
+    left:50px;
+}
+.li-black{
+    top:50px;
+}
+#header-classic{
+    top:-15px;
+    left: 70px;
+}
+.li-classic{
+    top:34px;
+    left: 50px;
+}
+#header-only{
+    top:-47px;
+    left: 75px;
+}
+.li-only{
+    left:75px;
+}
+footer{
+    border-top: 1px solid black;
+    position: relative;
+    height: 150px;
+}
+footer a img {
+    position: absolute;
+    width: 35px;
+    height: 35px;
+    top:35px;
+    display: inline-block;
+}
+#facebook-button{
+    position: absolute;
+    left:500px;
+}
+#whatsapp-button{
+    position: absolute;
+    left:550px;
+}
+#instagram-button{
+    position: absolute;
+    left:600px;
+}
+footer p{
+    position: absolute;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size:25px;
+    top: 90px;
+    left:400px;
+}

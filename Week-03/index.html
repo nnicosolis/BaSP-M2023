@@ -5,37 +5,34 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>HTML Landing Page</title>
+        <link rel="stylesheet" type="text/css" href="./reset.css">
+        <link rel="stylesheet" type="text/css" href="./styles.css">
     </head>
     <body>
         <header>
             <button id="menu-button">
+                <img src="./menu.png" alt="menu-icon">
             </button>
             <h1>
                 MEGA ROCKET SA
             </h1>
             <nav>
-                <ul>
-                    <li>
-                        <button id="home-button" >
-                        </button>
-                    </li>
-                    <li>
-                        <button id="profile-button" >                            
-                        </button>
-                    </li>
-                    <li>
-                        <button id="back-button" >                            
-                        </button>
-                    </li>
-                    <li>
-                        <button id="info-button" >                            
-                        </button>
-                    </li>
-                </ul>
+                <a>                    
+                    <img src="./home.png" alt="home-icon">                    
+                </a>
+                <a>
+                    <img src="./addUser.png" alt="profile-icon">                                              
+                </a>
+                <a>                          
+                    <img src="./login.png" alt="back-icon">                                          
+                </a>
+                <a>                    
+                    <img src="./info.png" alt="info-icon">                                                
+                </a>
             </nav>
         </header>
         <main>            
-            <section>
+            <section class="hi-section">
                 <h2>
                     Hi, I'm Mega Rocket Gym
                 </h2>
@@ -43,19 +40,17 @@
                     A free and fully responsive site template
                 </h3>
                 <p>
-                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Asperiores consequuntur reprehenderit tenetur 
-                    blanditiis facilis qui voluptatibus, atque cumque ipsam error maiores aperiam provident hic? Debitis 
-                    necessitatibus provident praesentium eius minima.
+                    Aenean ornare velit lacus, ac varius enim ullamcorper eu. Proin aliquam facilisis ante interdum congue. Integer mollis, nisl amet convallis, porttitor magna ullamcorper, amet egestas mauris. Ut magna finibus nisi nec lacinia. Nam maximus erat id euismod egestas. Pellentesque sapien ac quam. Lorem ipsum dolor sit nullam.
                 </p>
-                <button id="learn-more-button">                
-                </button>
-                <img src="image.jpg" alt="sample-image">
+                <button id="learn-more-button">Learn More</button>
+                <img src="./image.jpg" alt="gym-image">
             </section>
-            <section>
+            <section class="function-section">
                 <h2>
                     Funciones en la app
                 </h2>
-                <article>
+                <article id="art-turnos">
+                    <img src="./icon _calendar check_.png" alt="check-calendar">
                     <h3>
                         Reserva de turnos
                     </h3>
@@ -64,7 +59,8 @@
                         libero corrupti excepturi explicabo.
                     </p>
                 </article>
-                <article>
+                <article id="art-agenda">
+                    <img src="./calendar.png" alt="calendar">
                     <h3>
                         Visualización de agenda y horarios
                     </h3>
@@ -73,7 +69,8 @@
                         libero corrupti excepturi explicabo.
                     </p>
                 </article>
-                <article>
+                <article id="art-membresias">
+                    <img src="./membership.png" alt="membership">
                     <h3>
                         Gestión de membresías
                     </h3>
@@ -82,7 +79,8 @@
                         libero corrupti excepturi explicabo.
                     </p>
                 </article>
-                <article>
+                <article id="art-formulario">
+                    <img src="./questions.png" alt="questions">
                     <h3>
                         Formulario de contacto y sugerencias
                     </h3>
@@ -92,27 +90,23 @@
                     </p>
                 </article>
             </section>
-            <section>
+            <section class="aboutus-section">
                 <h2>
                     Acerca de nosotros
                 </h2>
                 <p>
-                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Perferendis earum rem mollitia harum sed? 
-                    Mollitia praesentium repellendus doloremque, ea illo nemo qui dolore labore voluptate magni pariatur 
-                    iusto eaque quod? Lorem ipsum dolor sit amet consectetur, adipisicing elit. Suscipit sunt ratione sed 
-                    dolorum doloribus ex officia, neque, deleniti id, rerum quis quibusdam. Odio aspernatur veritatis 
-                    deserunt recusandae quas officiis suscipit!
+                    Lorem ipsum dolor sit accumsan interdum nisi, quis tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent.
                 </p>
             </section>
-            <section>
+            <section class="form-section">
                 <h2>
                     Dejanos tu consulta
                 </h2>
-                <form action="">
+                <form>
                     <input type="text" placeholder="Nombre" id="name">
                     <input type="text" placeholder="Apellido" id="lastName">
-                    <input type="email" placeholder="email" id="email">
-                    <textarea name="" id="" cols="30" rows="10" 
+                    <input type="email" placeholder="Email" id="email">
+                    <textarea name="" id="comments" cols="30" rows="10" 
                     placeholder="Comentarios"></textarea>
                     <section>
                         <h3>
@@ -121,86 +115,81 @@
                         <section>
                             <article>
                                 <input type="checkbox" name="" id="option-1">
-                                <label for="option-1">
+                                <label for="option-1" id="first-label">
                                     Quiero conocer las membresías y costos
                                 </label>
                             </article>
                             <article>
                                 <input type="checkbox" name="" id="option-2">
-                                <label for="option-1">
+                                <label for="option-1" id="second-label">
                                     Quiero realizar una consulta o sugerencia
                                 </label>
                             </article>
                             <article>
                                 <input type="checkbox" name="" id="option-3">
-                                <label for="option-1">
+                                <label for="option-1" id="third-label">
                                     Quiero realizar un reclamo
                                 </label>
                             </article>
                         </section>
                     </section>
-                    <input type="submit" value="send">
+                    <input type="submit" value="Send" id="submit-btn">
                 </form>
             </section>
-            <section>
+            <section class="classes-section">
                 <article>
-                    <h3>
+                    <h3 id="header-clases">
                         Clases
                     </h3>
                     <ul>
-                        <li>Crossfit</li>
-                        <li>Spinning</li>
-                        <li>Boxeo</li>
-                        <li>Musculación</li>
+                        <li class="li-clases">Crossfit</li>
+                        <li class="li-clases">Spinning</li>
+                        <li class="li-clases">Boxeo</li>
+                        <li class="li-clases">Musculación</li>
                     </ul>
                 </article>
                 <article>
-                    <h3>
+                    <h3 id="header-black">
                         Membresía Black
                     </h3>
                     <ul>
-                        <li>Acceso libre a la sala de musculación</li>
-                        <li>Acceso libre a clases previa inscripción</li>
-                        <li>Seguimiento personalizado por un entrenador</li>
-                        <li>Visualización de grilla</li>
+                        <li class="li-black">Acceso libre a la sala de musculación</li>
+                        <li class="li-black">Acceso libre a clases previa inscripción</li>
+                        <li class="li-black">Seguimiento personalizado por un entrenador</li>
+                        <li class="li-black">Visualización de grilla</li>
                     </ul>
                 </article>
                 <article>
-                    <h3>
+                    <h3 id="header-classic">
                         Membresía Classic
                     </h3>
                     <ul>
-                        <li>Acceso libre a clases previa inscripción</li>
-                        <li>Seguimiento personalizado por un entrenador</li>
-                        <li>Visualización de grilla</li>
+                        <li class="li-classic">Acceso libre a clases previa inscripción</li>
+                        <li class="li-classic">Seguimiento personalizado por un entrenador</li>
+                        <li class="li-classic">Visualización de grilla</li>
                     </ul>
                 </article>
-                <article>
-                    <h3>
+                <article >
+                    <h3 id="header-only">
                         Membresía Only Classes
                     </h3>
                     <ul>
-                        <li>Acceso libre a clases previa inscripción</li>
-                        <li>Visualización de grilla</li>
+                        <li class="li-only">Acceso libre a clases previa inscripción</li>
+                        <li class="li-only">Visualización de grilla</li>
                     </ul>
                 </article>
             </section>
         </main>
         <footer>
-            <ul>
-                <li>
-                    <button id="facebook-button">
-                    </button>
-                </li>
-                <li>
-                    <button id="whatsapp-button">                            
-                    </button>
-                </li>
-                <li>
-                    <button id="instagram-button">                            
-                    </button>
-                </li>
-            </ul>
+            <a id="facebook-button">
+                <img src="./fb-icon.png" alt="">
+            </a>
+            <a id="whatsapp-button"> 
+                <img src="./wsp-icon.png" alt="">
+            </a>
+            <a id="instagram-button">   
+                <img src="./instagram-icon.png" alt="">  
+            </a>
             <p>
                 © Mega rocket sa 2023
             </p>

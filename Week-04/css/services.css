@@ -1,0 +1,35 @@
+.services{
+    height: 600px;
+}
+.services .container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.services .container .box{
+    display: flex;
+    width: 390px;
+    flex-wrap: wrap;
+}
+
+.services .container .box h3{
+    font-size: 28px;
+    color: #49A37B;
+    font-weight: bold;
+    margin: 10px 0;
+    width: 390px;
+}
+
+.services .container .box ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+.services .container .box ul li{
+    font-size:15px;
+}
+
+.services .container:nth-child(1) ul li{
+    width: 150px;
+    margin: 5px 5px;
+}

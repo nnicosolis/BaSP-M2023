@@ -1,11 +1,14 @@
 .services{
-    height: 600px;
+    height: 680px;
+    border-bottom: 1px solid black;
 }
+
 .services .container{
     display: flex;
     flex-direction: column;
     align-items: center;
 }
+
 .services .container .box{
     display: flex;
     width: 390px;
@@ -18,18 +21,32 @@
     font-weight: bold;
     margin: 10px 0;
     width: 390px;
+    text-align: center;
 }
 
 .services .container .box ul {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
-}
-.services .container .box ul li{
-    font-size:15px;
+    width: 80%;
+    margin: 0 auto;
 }
 
-.services .container:nth-child(1) ul li{
-    width: 150px;
-    margin: 5px 5px;
+.services .container .box ul li{
+    font-size: 15px;
+    list-style-type: circle;
+    list-style-image: url(../assets/img/li-circle.png);
+    width: 100%;
+    margin: 10px 10px;
+}
+
+.services .container:first-child .box:first-child ul{
+    width: 80%;
+    margin: auto;
+}
+
+.services .container:first-child .box:first-child ul li{
+    width: 40%;
+    margin: 10px 0;
+    text-align: center;
 }
